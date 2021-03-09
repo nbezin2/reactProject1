@@ -15,9 +15,9 @@
                     <h1> Hello {props.name} welcome to REACT</h1>
                 );
             }
-            
+            const element = <Hello name="Nicholas"/>;
             ReactDOM.render(
-                <Hello name="Nicholas"/>, document.getElementById("root");
+               element, document.getElementById("root");
             );
             
             /*window.onload = function()
