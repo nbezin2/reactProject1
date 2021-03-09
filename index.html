@@ -9,7 +9,18 @@
         <div id="root"></div>
 
         <script>
-            window.onload = function()
+            
+            function Hello(props) {
+                return (
+                    <h1> Hello {props.name} welcome to REACT</h1>
+                );
+            }
+            
+            ReactDOM.render(
+                <Hello name="Nicholas"/>, document.getElementById("root");
+            );
+            
+            /*window.onload = function()
             {
                 class Greetings extends React.Component
                 {
@@ -20,10 +31,10 @@
                 }
 
                 ReactDOM.render(
-                    React.createElement(Greetings, { name : 'Chris' }),
+                    React.createElement(Greetings, { name : 'Nicholas' }),
                     document.getElementById('root')
                 );
-            };
+            };*/
         </script>
     </body>
 </html>
