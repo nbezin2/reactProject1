@@ -11,11 +11,11 @@
         <script>
             
             function Hello(props) {
-                return (
-                    <h1> Hello {props.name} welcome to REACT</h1>
-                );
+                return <h1> Hello {props.name} welcome to REACT</h1> <br>
+                        <h2> The best PS3 Game made was {props.game}</h2>;
             }
-            const element = <Hello name="Nicholas"/>;
+            
+            const element = <Hello name="Nicholas" game="The Last of Us"/>;
             ReactDOM.render(
                element, document.getElementById("root");
             );
