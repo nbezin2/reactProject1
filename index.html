@@ -11,8 +11,12 @@
         <script>
             
             function Hello(props) {
-                return (<h1> Hello {props.name} welcome to REACT</h1> <br>
-                        <h2> The best PS3 Game made was {props.game}</h2>);
+                return (
+                    <div>
+                        <h1> Hello {props.name} welcome to REACT</h1>
+                        <h2> The best PS3 Game made was {props.game}</h2>
+                    </div>
+                );
             }
             
             const element = <Hello name="Nicholas" game="The Last of Us"/>;
